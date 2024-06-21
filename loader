@@ -565,78 +565,6 @@ function Library:Create(TitleText)
 			TextBoxTitle = TextBoxTitle or "TextBox"
 			callback = callback or function() end
 			
-			local TextBox = Instance.new("TextButton")
-			local UICorner_34 = Instance.new("UICorner")
-			local Title_12 = Instance.new("TextLabel")
-			local UIPadding_20 = Instance.new("UIPadding")
-			local UIStroke_9 = Instance.new("UIStroke")
-			local TextBox_2 = Instance.new("TextBox")
-			local UICorner_35 = Instance.new("UICorner")
-			local UIStroke_10 = Instance.new("UIStroke")
-			
-			TextBox.Name = "TextBox"
-			TextBox.Parent = NewTab
-			TextBox.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-			TextBox.ClipsDescendants = true
-			TextBox.Size = UDim2.new(1, 0, 0, 32)
-			TextBox.AutoButtonColor  = false
-			TextBox.Font = Enum.Font.SourceSans
-			TextBox.Text = ""
-			TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
-			TextBox.TextSize = 14.000
-
-			UICorner_34.CornerRadius = UDim.new(0, 4)
-			UICorner_34.Parent = TextBox
-
-			Title_12.Name = "Title"
-			Title_12.Parent = TextBox
-			Title_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-			Title_12.BackgroundTransparency = 1.000
-			Title_12.Size = UDim2.new(0.750988126, -20, 1, 0)
-			Title_12.Font = Enum.Font.Ubuntu
-			Title_12.Text = TextBoxTitle
-			Title_12.TextColor3 = Color3.fromRGB(255, 255, 255)
-			Title_12.TextSize = 14.000
-			Title_12.TextXAlignment = Enum.TextXAlignment.Left
-
-			UIPadding_20.Parent = TextBox
-			UIPadding_20.PaddingBottom = UDim.new(0, 6)
-			UIPadding_20.PaddingLeft = UDim.new(0, 6)
-			UIPadding_20.PaddingRight = UDim.new(0, 6)
-			UIPadding_20.PaddingTop = UDim.new(0, 6)
-			
-			UIStroke_9.Name = "UIStroke"
-			UIStroke_9.Parent = TextBox
-			UIStroke_9.ApplyStrokeMode = "Border"
-			UIStroke_9.Color = Color3.fromRGB(81, 81, 81)
-			UIStroke_9.LineJoinMode = "Round"
-			UIStroke_9.Thickness = 1
-			UIStroke_9.Transparency = 0
-
-			TextBox_2.Parent = TextBox
-			TextBox_2.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
-			TextBox_2.BorderSizePixel = 0
-			TextBox_2.ClipsDescendants = true
-			TextBox_2.Position = UDim2.new(0.691699624, 0, 0, 0)
-			TextBox_2.Size = UDim2.new(0, 75, 0, 20)
-			TextBox_2.ZIndex = 99
-			TextBox_2.ClearTextOnFocus = false
-			TextBox_2.Font = Enum.Font.Ubuntu
-			TextBox_2.PlaceholderText = "Enter Value"
-			TextBox_2.Text = ""
-			TextBox_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-			TextBox_2.TextSize = 12.000
-
-			UICorner_35.Parent = TextBox_2
-			
-			UIStroke_10.Name = "UIStroke"
-			UIStroke_10.Parent = TextBox_2
-			UIStroke_10.ApplyStrokeMode = "Border"
-			UIStroke_10.Color = Color3.fromRGB(136, 136, 136)
-			UIStroke_10.LineJoinMode = "Round"
-			UIStroke_10.Thickness = 1
-			UIStroke_10.Transparency = 0
-			
 			local btn = TextBox
 			
 			local hovering = false
@@ -679,7 +607,6 @@ function Library:Create(TitleText)
 			ToggleName = ToggleName or "Toggle"
 			callback = callback or function() end
 			local ms = game.Players.LocalPlayer:GetMouse()
-			local btn  = Toggle
 			local sample  = Sample
 			local focusing = false
 
